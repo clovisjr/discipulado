@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10: Céu e Inferno | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 10</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Céu e Inferno</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">Os destinos eternos e a importância das escolhas que fazemos nesta vida</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Compreender a realidade dos destinos eternos</h3>
+                    <p class="text-gray-700">A Bíblia ensina claramente que existem dois destinos eternos para todo ser humano: o céu e o inferno. Não se trata de mitos ou metáforas, mas de realidades concretas que nos aguardam após a morte. Jesus falou mais sobre o inferno do que sobre o céu, demonstrando a seriedade do assunto. Embora nossa mente finita não possa compreender plenamente essas realidades eternas, as Escrituras nos fornecem descrições suficientes para entendermos sua natureza essencial e a importância de nossas escolhas nesta vida.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender o propósito do julgamento divino</h3>
+                    <p class="text-gray-700">O julgamento final de Deus não é uma manifestação de crueldade, mas de justiça perfeita e amor. Deus é infinitamente justo e não pode ignorar o pecado; ao mesmo tempo, é infinitamente amoroso e providenciou um caminho de escape através de Jesus Cristo. O julgamento divino revela a santidade de Deus, afirma o valor da justiça, demonstra respeito pela liberdade humana, confirma a realidade do pecado e suas consequências, e enfatiza a importância da responsabilidade moral.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Refletir sobre a importância de viver com perspectiva eterna</h3>
+                    <p class="text-gray-700">Compreender a realidade dos destinos eternos transforma nossa visão sobre a vida presente. Quando temos clareza sobre o que nos aguarda na eternidade, nossas prioridades mudam, nossas decisões se alinham com valores eternos, e desenvolvemos um senso de urgência em compartilhar o evangelho. Viver com perspectiva eterna nos ajuda a valorizar o que realmente importa, a enfrentar o sofrimento com esperança, e a investir nossa vida no que permanecerá para sempre, em vez de buscar apenas satisfações temporárias.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Mateus 25:46</h3>
+                    <p class="text-gray-700 mb-3">"E irão estes para o castigo eterno, mas os justos para a vida eterna."</p>
+                    <p class="text-gray-600 italic">Jesus estabelece claramente a existência de dois destinos eternos contrastantes: castigo eterno para os que rejeitam a Deus e vida eterna para os justos.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">João 14:2-3</h3>
+                    <p class="text-gray-700 mb-3">"Na casa de meu Pai há muitas moradas; se não fosse assim, eu teria dito. Vou preparar-vos lugar. E, quando eu for e vos preparar lugar, voltarei e vos receberei para mim mesmo, para que, onde eu estou, estejais vós também."</p>
+                    <p class="text-gray-600 italic">Jesus promete aos seus seguidores um lugar preparado especialmente para eles na presença de Deus, enfatizando a natureza relacional do céu.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Apocalipse 21:1-5</h3>
+                    <p class="text-gray-700 mb-3">"Vi novo céu e nova terra, pois o primeiro céu e a primeira terra passaram, e o mar já não existe. Vi também a cidade santa, a nova Jerusalém, que descia do céu, da parte de Deus, preparada como uma noiva adornada para o seu marido. Então, ouvi grande voz vinda do trono, dizendo: Eis o tabernáculo de Deus com os homens. Deus habitará com eles. Eles serão povos de Deus, e Deus mesmo estará com eles. E lhes enxugará dos olhos toda lágrima, e a morte já não existirá, já não haverá luto, nem pranto, nem dor, porque as primeiras coisas passaram. E aquele que estava assentado no trono disse: Eis que faço novas todas as coisas."</p>
+                    <p class="text-gray-600 italic">João descreve a gloriosa visão do estado final dos redimidos, onde Deus habitará com seu povo e eliminará toda forma de sofrimento e morte.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">2 Pedro 3:9</h3>
+                    <p class="text-gray-700 mb-3">"O Senhor não retarda a sua promessa, ainda que alguns a têm por tardia; mas é longânimo para convosco, não querendo que alguns se percam, senão que todos venham a arrepender-se."</p>
+                    <p class="text-gray-600 italic">Pedro revela o coração de Deus que não deseja a condenação de ninguém, mas dá tempo para que todos se arrependam e sejam salvos.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Conteúdo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">A natureza do céu</h3>
+                    <p class="text-gray-700 mb-4">A Bíblia apresenta o céu não apenas como um lugar, mas como um estado de comunhão perfeita com Deus. Longe de ser uma existência etérea e sem substância, o céu é descrito como a nova criação - novos céus e nova terra - onde os remidos viverão em corpos ressurretos e glorificados. No céu, desfrutaremos da presença imediata de Deus, experimentaremos a ausência completa de todo mal e sofrimento, viveremos em perfeita comunhão com outros crentes, participaremos de adoração perpétua e significativa, e possivelmente teremos papéis e responsabilidades específicas. Embora o céu transcenda nossa compreensão atual, sabemos que será a realização de nossos anseios mais profundos e a culminação do propósito para o qual fomos criados.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">A realidade do inferno</h3>
+                    <p class="text-gray-700 mb-4">O inferno é descrito na Escritura como um lugar de separação consciente e eterna de Deus, caracterizado por sofrimento, remorso e ausência de esperança. A Bíblia usa várias imagens para descrevê-lo: fogo, trevas, choro e ranger de dentes, e morte segunda. Embora muitos questionem a justiça de uma punição eterna, devemos lembrar que o inferno reflete a seriedade infinita do pecado contra um Deus infinitamente santo, assim como o respeito divino pela liberdade humana de rejeitar Seu amor. O inferno não é um lugar para onde Deus envia pessoas arbitrariamente, mas o destino escolhido por aqueles que persistentemente rejeitam a Deus e Seu amor. É importante abordar este tema com sobriedade, jamais com satisfação, lembrando que o coração de Deus não deseja que ninguém pereça.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">O julgamento final</h3>
+                    <p class="text-gray-700 mb-4">A Bíblia ensina que haverá um julgamento final quando todos comparecerão diante de Deus. Para os crentes, este não será um julgamento para determinar salvação - que é assegurada pela fé em Cristo - mas para avaliar suas obras e determinar recompensas. Para os incrédulos, será o momento em que enfrentarão as consequências da rejeição do amor e da verdade de Deus. O julgamento final demonstrará a perfeita justiça de Deus, onde cada pessoa será julgada de acordo com a luz e as oportunidades que recebeu, e segundo seus próprios atos e escolhas. Este julgamento trará encerramento à história humana como a conhecemos e inaugurará o estado eterno, onde a justiça de Deus será plenamente vindicada e Sua glória perfeitamente manifestada.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Perguntas difíceis sobre o destino eterno</h3>
+                    <p class="text-gray-700 mb-4">Muitas perguntas surgem quando contemplamos os destinos eternos: Como um Deus de amor pode enviar pessoas para o inferno? O que acontece com aqueles que nunca ouviram o evangelho? Como pode uma punição eterna ser justa para pecados temporais? Estas questões exigem reflexão cuidadosa e humildade. Devemos lembrar que Deus é perfeitamente justo e amoroso, e não deseja que ninguém pereça. O inferno é a consequência natural da rejeição deliberada do único caminho para a vida eterna. Quanto àqueles que nunca ouviram o evangelho, confiamos que o Juiz de toda a terra fará o que é justo, julgando cada pessoa de acordo com a luz que recebeu. Não temos todas as respostas, mas sabemos que o caráter de Deus é perfeitamente bom e justo.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Vivendo com perspectiva eterna</h3>
+                    <p class="text-gray-700 mb-4">Compreender a realidade dos destinos eternos transforma fundamentalmente nossa abordagem à vida presente. Primeira, nos leva a reavaliar nossas prioridades, investindo no que tem valor eterno em vez do que é meramente temporário. Segunda, nos motiva a buscar a santidade e viver de maneira que agrade a Deus. Terceira, nos dá esperança e consolo em meio ao sofrimento presente, sabendo que este não é o fim da história. Quarta, nos impele a compartilhar as boas novas de salvação com urgência e compaixão. E quinta, nos ajuda a desenvolver um anseio saudável pelo retorno de Cristo e pela consumação de todas as coisas. Viver com perspectiva eterna não nos torna "tão celestiais que não temos utilidade terrena", mas nos capacita a viver significativamente no presente à luz do futuro que nos aguarda.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula9.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="index.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Voltar ao Início <i class="fas fa-home ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 

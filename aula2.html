@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 2: Deus Trino - Pai, Filho e Espírito Santo | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 2</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Deus Trino - Pai, Filho e Espírito Santo</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">Conhecendo a natureza e unidade de Deus em três pessoas</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Explicar o conceito da Trindade</h3>
+                    <p class="text-gray-700">A Trindade é um mistério maravilhoso que demonstra a complexidade e a profundidade de Deus. Assim como uma família tem diferentes membros com funções únicas, mas unidos por amor, Deus se revela como Pai, Filho e Espírito Santo. Cada pessoa da Trindade é completamente Deus, trabalhando em perfeita harmonia para nossa salvação e restauração.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Compreender as características de cada pessoa divina</h3>
+                    <p class="text-gray-700">Cada pessoa da Trindade possui atributos e funções distintas, embora compartilhem a mesma essência divina. O Pai é frequentemente associado à criação e autoridade, o Filho à redenção e revelação, e o Espírito Santo à santificação e capacitação. Conhecer essas características nos ajuda a entender como Deus trabalha em nossa vida de maneiras diversas e complementares.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender a unidade de Deus</h3>
+                    <p class="text-gray-700">Apesar de se manifestar em três pessoas, Deus é absolutamente um em essência e propósito. Não adoramos três deuses, mas um único Deus que existe em perfeita união. Esta unidade na diversidade é um modelo para nossas relações humanas e para a igreja, mostrando como podemos manter a unidade mesmo tendo papéis e dons diferentes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Mateus 28:19</h3>
+                    <p class="text-gray-700 mb-3">"Portanto, vão e façam discípulos de todas as nações, batizando-os em nome do Pai, do Filho e do Espírito Santo."</p>
+                    <p class="text-gray-600 italic">Nesta passagem, Jesus menciona as três pessoas da Trindade em uma única declaração, mostrando sua unidade e igualdade.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">João 1:1-3</h3>
+                    <p class="text-gray-700 mb-3">"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Ele estava no princípio com Deus. Todas as coisas foram feitas por intermédio dele, e sem ele nada do que foi feito se fez."</p>
+                    <p class="text-gray-600 italic">Esta passagem revela a divindade de Jesus (o Verbo) e sua preexistência eterna com o Pai.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">2 Coríntios 13:14</h3>
+                    <p class="text-gray-700 mb-3">"A graça do Senhor Jesus Cristo, o amor de Deus e a comunhão do Espírito Santo sejam com todos vocês."</p>
+                    <p class="text-gray-600 italic">Paulo menciona as três pessoas da Trindade, atribuindo características específicas a cada uma.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Conteúdo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Deus como Pai Criador</h3>
+                    <p class="text-gray-700 mb-4">Deus Pai é retratado nas Escrituras como o iniciador do plano de salvação, Aquele que enviou o Filho e que prometeu o Espírito Santo. Como Criador, Ele é a fonte de toda vida e existência. É também o Pai amoroso que cuida de Seus filhos, provendo suas necessidades e corrigindo-os com amor. Sua paternidade transcende qualquer paternidade terrena, oferecendo um amor incondicional e uma aceitação completa.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Jesus como Filho Redentor</h3>
+                    <p class="text-gray-700 mb-4">Jesus Cristo é a revelação perfeita de Deus em forma humana. Como o eterno Filho de Deus, Ele deixou a glória celestial para se tornar homem, vivendo uma vida sem pecado e oferecendo-se como sacrifício pelos pecados da humanidade. Através de sua morte e ressurreição, Jesus conquistou a redenção para todos que creem. Ele continua sendo o mediador entre Deus e os homens, nosso sumo sacerdote e advogado junto ao Pai.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Espírito Santo como Consolador</h3>
+                    <p class="text-gray-700 mb-4">O Espírito Santo é a presença ativa de Deus no mundo e na vida dos crentes. Como Consolador prometido por Jesus, Ele habita em cada crente, proporcionando orientação, conforto e poder. O Espírito Santo convence o mundo do pecado, da justiça e do juízo, e trabalha na vida dos cristãos para produzir o fruto do Espírito e transformá-los à imagem de Cristo. É também quem distribui dons espirituais para edificação da igreja.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula1.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="aula3.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Próxima Aula <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 

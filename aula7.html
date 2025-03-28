@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7: Batismo - Compromisso com Jesus | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 7</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Batismo - Compromisso com Jesus</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">Entendendo o significado e a importância do batismo na vida cristã</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender o significado do batismo</h3>
+                    <p class="text-gray-700">O batismo é uma declaração pública de nossa fé, um momento onde externamos interiormente o que já aconteceu em nosso coração. Assim como uma pessoa muda de roupa, no batismo simbolizamos o despir-se da vida antiga e o revestir-se da nova vida em Cristo. É um ato de obediência e testemunho, onde mergulhamos nas águas para demonstrar nossa identificação com a morte, sepultamento e ressurreição de Jesus.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Conhecer sua simbologia</h3>
+                    <p class="text-gray-700">O batismo simboliza a morte para o pecado e o nascimento para uma nova vida em Cristo. A imersão na água representa o sepultamento com Cristo e a saída da água representa a ressurreição para uma nova vida. O próprio termo "batismo" significa "imersão" ou "mergulho", reforçando a simbologia de ser completamente envolvido pela graça divina e emergir como uma nova criação.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Reconhecer sua importância</h3>
+                    <p class="text-gray-700">O batismo é uma ordenança instituída por Jesus e representa um marco importante na vida do cristão. É o momento em que publicamente declaramos nossa fé e compromisso com Cristo. Embora não seja um requisito para a salvação, que é pela graça mediante a fé, o batismo é um ato de obediência e um testemunho externo da transformação interna que já ocorreu no coração do crente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Marcos 16:16</h3>
+                    <p class="text-gray-700 mb-3">"Quem crer e for batizado será salvo; quem não crer será condenado."</p>
+                    <p class="text-gray-600 italic">Jesus conecta o batismo à fé como uma expressão natural da salvação.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Romanos 6:4</h3>
+                    <p class="text-gray-700 mb-3">"Fomos, pois, sepultados com ele pelo batismo na morte, para que, como Cristo foi ressuscitado dos mortos pela glória do Pai, assim também nós andemos em novidade de vida."</p>
+                    <p class="text-gray-600 italic">Paulo explica a profunda simbologia do batismo como identificação com a morte e ressurreição de Cristo.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Mateus 3:16</h3>
+                    <p class="text-gray-700 mb-3">"Jesus, tendo sido batizado, saiu logo da água, e eis que se lhe abriram os céus, e viu o Espírito de Deus descendo como pomba e vindo sobre Ele."</p>
+                    <p class="text-gray-600 italic">O batismo de Jesus nos dá o exemplo a seguir, mostrando a importância deste ato.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Definição e Características do Batismo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">O que é batismo</h3>
+                    <p class="text-gray-700 mb-4">A palavra batismo vem do grego "baptizo", que significa imersão ou mergulho. É uma manifestação pública da fé em Jesus e um símbolo de arrependimento e regeneração. O batismo não é um ritual vazio, mas um testemunho visível da transformação interior que ocorreu quando a pessoa aceitou a Cristo como Salvador.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Características do batismo</h3>
+                    <p class="text-gray-700 mb-4">O batismo é uma ordenança instituída pelo próprio Jesus (Mateus 28:19). É realizado em nome do Pai, do Filho e do Espírito Santo, simbolizando a morte com Cristo (imersão nas águas), o sepultamento com Cristo (permanência momentânea debaixo das águas) e a ressurreição com Cristo em uma nova vida (saída das águas). Este simbolismo poderoso representa a união do crente com a experiência redentora de Cristo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Condições para o Batismo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Quem pode ser batizado</h3>
+                    <p class="text-gray-700 mb-4">O batismo é destinado àqueles que sinceramente se arrependeram de seus pecados, converteram-se a Cristo e o confessam como Senhor e Salvador. De acordo com Marcos 16:15-16 e Atos 8:12, a sequência bíblica é clara: primeiro crer (converter-se), depois ser batizado. O batismo é para aqueles que fizeram uma escolha consciente de seguir a Jesus.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Impedimentos para o batismo</h3>
+                    <p class="text-gray-700 mb-4">Pessoas que ainda vivem em pecados graves, como vícios (drogas, álcool, cigarro), vida sexual irregular, homossexualidade não abandonada, práticas criminosas ou que não demonstram um arrependimento sincero não devem ser batizadas. O batismo simboliza a morte para o pecado e o início de uma nova vida; portanto, deve ser precedido por um verdadeiro arrependimento e transformação de vida.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Batismo infantil</h3>
+                    <p class="text-gray-700 mb-4">O batismo não é recomendado para crianças menores de 12 anos, que ainda não têm maturidade suficiente para compreender conceitos como pecado, arrependimento e salvação. Embora Jesus tenha dito "Deixai vir a mim as criancinhas" (Lucas 18:16), demonstrando Seu amor pelas crianças, o batismo requer uma decisão consciente e madura que só pode ser tomada quando a pessoa entende o significado desse passo de fé.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Batismo no Espírito Santo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Diferença entre batismo nas águas e no Espírito</h3>
+                    <p class="text-gray-700 mb-4">O batismo no Espírito Santo é diferente do batismo nas águas. Enquanto o batismo nas águas é um ato físico simbolizando nossa identificação com Cristo, o batismo no Espírito Santo é uma experiência espiritual em que o crente é revestido do poder de Deus. Baseado em Mateus 3:11 e Atos 2:4, o batismo no Espírito é direito de todos os crentes, mas é um evento separado da salvação, geralmente marcado pela evidência inicial de falar em línguas.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Importância em nossa vida</h3>
+                    <p class="text-gray-700 mb-4">O batismo no Espírito Santo nos capacita para o serviço cristão, dando-nos poder para testemunhar (Atos 1:8), coragem para proclamar o evangelho e dons espirituais para edificação da igreja. É importante não confundir o dom de línguas (1 Coríntios 12:10), que é para edificação da igreja, com a manifestação de línguas no batismo no Espírito Santo, que é um sinal pessoal da recepção desta bênção.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula6.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="aula8.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Próxima Aula <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 

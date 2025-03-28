@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8: Igreja - Família Espiritual | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 8</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Igreja - Família Espiritual</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">Compreendendo o significado e a importância da comunidade de fé</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Definir o que é igreja</h3>
+                    <p class="text-gray-700">A igreja não é apenas um prédio ou uma instituição, mas um corpo vivo de pessoas unidas por Jesus Cristo. É uma família espiritual onde diferentes pessoas, com histórias e origens diversas, se encontram para crescer juntas, se apoiar mutuamente e mostrar ao mundo o amor de Deus. Cada membro tem um papel importante nesse organismo espiritual, assim como cada parte do corpo tem sua função específica.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender sua importância</h3>
+                    <p class="text-gray-700">Deus nunca planejou que os cristãos vivessem sua fé isoladamente. A igreja é o ambiente onde experimentamos crescimento espiritual, prestação de contas, encorajamento mútuo e oportunidades de serviço. É o corpo de Cristo na terra, continuando Sua missão de proclamar as boas novas, fazer discípulos e demonstrar o amor de Deus através de ações concretas. Participar ativamente de uma igreja local é essencial para nosso desenvolvimento como seguidores de Jesus.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Aprender sobre comunhão</h3>
+                    <p class="text-gray-700">A comunhão cristã vai além de simplesmente socializar; é o compartilhamento profundo de nossa vida em Cristo. Envolve unidade na fé, amor fraternal, partilha de bênçãos e fardos, e crescimento mútuo. Na comunhão genuína, somos desafiados a abandonar o egoísmo e viver centrados nos outros, assim como Cristo fez. É nessa comunidade amorosa que o mundo pode ver o poder transformador do evangelho.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Mateus 16:18</h3>
+                    <p class="text-gray-700 mb-3">"E eu também te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."</p>
+                    <p class="text-gray-600 italic">Jesus declara que Ele mesmo construirá Sua igreja, garantindo sua vitória final.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Efésios 4:4-6</h3>
+                    <p class="text-gray-700 mb-3">"Há um só corpo e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, o qual é sobre todos, age por meio de todos e está em todos."</p>
+                    <p class="text-gray-600 italic">Paulo destaca a unidade essencial da igreja, fundamentada em um só Deus, uma só fé e um só batismo.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Atos 2:42</h3>
+                    <p class="text-gray-700 mb-3">"E perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."</p>
+                    <p class="text-gray-600 italic">A igreja primitiva dedicava-se a quatro práticas fundamentais: ensinamento bíblico, comunhão, partilha das refeições (incluindo a Ceia) e oração.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Efésios 1:22-23</h3>
+                    <p class="text-gray-700 mb-3">"E sujeitou todas as coisas a seus pés e, para ser o cabeça sobre todas as coisas, o deu à igreja, que é o seu corpo, a plenitude daquele que cumpre tudo em todos."</p>
+                    <p class="text-gray-600 italic">A igreja é descrita como o corpo de Cristo, com Jesus como a cabeça, demonstrando a relação íntima entre Cristo e Sua igreja.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Definição de Igreja</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Origem da palavra</h3>
+                    <p class="text-gray-700 mb-4">A palavra "igreja" tem uma origem rica e significativa. Do latim "eclésia", do grego "ekklesia" (significando "assembleia pública" ou "reunidos para fora") e do hebraico "qahal" (significando "multidão humana reunida"), o termo sempre esteve associado a uma comunidade de pessoas chamadas para um propósito específico. No contexto cristão, representa a reunião daqueles que foram escolhidos e transformados por Cristo para serem Seu povo no mundo.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">O que a igreja realmente é</h3>
+                    <p class="text-gray-700 mb-4">A igreja é muito mais do que um edifício, uma denominação ou uma organização religiosa. É essencialmente uma comunidade de pessoas chamadas por Deus para segui-lo. Como corpo de Cristo (Efésios 1:22-23; Colossenses 1:18), a igreja é uma unidade orgânica onde cada membro tem um papel vital a desempenhar. É uma comunidade que cultua a Deus, medita em Sua Palavra, celebra os sacramentos e vive em missão no mundo.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Características da Igreja</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Igreja Visível e Invisível</h3>
+                    <p class="text-gray-700 mb-4">
+                        <strong>Igreja Visível:</strong> É a igreja como as pessoas a veem, composta por todos que professam ser cristãos e frequentam os cultos. No entanto, nem todos os membros visíveis são genuínos seguidores de Cristo.<br><br>
+                        <strong>Igreja Invisível:</strong> É a igreja como Deus a vê, composta apenas pelos verdadeiros seguidores de Cristo, aqueles que realmente nasceram de novo. Como ilustrado em Mateus 7:15-23 e Mateus 13:24-50, apenas Deus conhece o verdadeiro coração dos crentes e pode distinguir entre a fé autêntica e a mera aparência de fé.
+                    </p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Missão da Igreja</h3>
+                    <p class="text-gray-700 mb-4">A missão da igreja no mundo é multifacetada, incluindo:</p>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-2">
+                        <li>Anunciar o Evangelho a todas as nações (Marcos 16:15)</li>
+                        <li>Fazer discípulos de todos os povos (Mateus 28:19)</li>
+                        <li>Batizar em nome do Pai, Filho e Espírito Santo</li>
+                        <li>Realizar obras de compaixão e misericórdia</li>
+                        <li>Ser luz e sal no mundo (Mateus 5:13-16)</li>
+                        <li>Proclamar o reino de Deus e seus valores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Deveres Cristãos na Igreja</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Respeitar as Lideranças</h3>
+                    <p class="text-gray-700 mb-4">Os cristãos são chamados a obedecer aos guias espirituais e imitar sua fé. Hebreus 13:7,17 orienta os crentes a respeitarem e obedecerem aos líderes espirituais, reconhecendo que estes vigiam por suas almas e terão que prestar contas a Deus. Este respeito não é cego ou incondicional, mas baseia-se no reconhecimento do papel que Deus concedeu às lideranças para guiar, proteger e alimentar espiritualmente o rebanho.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Evitar Doutrinas Estranhas</h3>
+                    <p class="text-gray-700 mb-4">Hebreus 13:9 adverte contra doutrinas variadas e estranhas que podem desviar os crentes da verdade do evangelho. Os cristãos devem estudar diligentemente as Escrituras, raízes profundas na Palavra de Deus e rejeitar ensinamentos contrários ao Evangelho. Num mundo de relativismo e pluralismo religioso, é essencial manter-se firme na doutrina sólida e no evangelho verdadeiro.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Compromisso com a Igreja Local</h3>
+                    <p class="text-gray-700 mb-4">Os cristãos são chamados a um compromisso ativo com sua igreja local, que inclui participação frequente nos cultos, envolvimento ministerial usando seus dons espirituais, e fidelidade nos dízimos e ofertas. Como ensina 2 Coríntios 9:10, ao semearmos generosamente, também colheremos abundantemente. Este compromisso não se resume a comparecer aos cultos, mas envolve colocar-se à disposição para servir, contribuir financeiramente e participar da vida comunitária da igreja de maneira integral.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula7.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="aula9.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Próxima Aula <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 

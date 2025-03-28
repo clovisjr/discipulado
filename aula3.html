@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3: Jesus Cristo - O Salvador | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 3</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Jesus Cristo - O Salvador</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">Conhecendo o Filho de Deus e seu plano de redenção para a humanidade</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Conhecer a história de Jesus</h3>
+                    <p class="text-gray-700">Jesus não é apenas um personagem histórico, mas o próprio Deus que se fez homem para nos resgatar. Sua vinda ao mundo foi o maior ato de amor da história, deixando o trono celestial para viver como ser humano, experimentar nossas dores e nos mostrar o caminho da reconciliação com Deus. Através de sua vida, morte e ressurreição, Jesus nos oferece uma nova chance de viver em comunhão com o Pai.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender o significado de sua morte e ressurreição</h3>
+                    <p class="text-gray-700">A morte de Jesus na cruz não foi um acidente, mas o cumprimento perfeito do plano divino para nossa redenção. Na cruz, Ele carregou nossos pecados e sofreu a separação de Deus que merecíamos. Sua ressurreição ao terceiro dia é a prova definitiva de sua divindade e a garantia de nossa justificação. Este evento transformador é o centro da fé cristã e a base de nossa esperança de vida eterna.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Compreender o plano de salvação</h3>
+                    <p class="text-gray-700">O plano de salvação foi concebido antes da fundação do mundo. Deus, em sua presciência, já sabia que precisaríamos de resgate, e enviou Jesus como a solução perfeita para nosso estado de separação. Este plano revela tanto a justiça quanto o amor de Deus – a justiça que exige punição pelo pecado e o amor que oferece seu próprio Filho como sacrifício em nosso lugar. Através da fé em Cristo, somos incluídos neste plano e recebemos o dom da vida eterna.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">João 3:16</h3>
+                    <p class="text-gray-700 mb-3">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."</p>
+                    <p class="text-gray-600 italic">Este versículo resume o evangelho, mostrando o amor de Deus e o propósito da vinda de Jesus.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Romanos 5:8</h3>
+                    <p class="text-gray-700 mb-3">"Mas Deus prova o seu amor para conosco em que Cristo morreu por nós, sendo nós ainda pecadores."</p>
+                    <p class="text-gray-600 italic">Este versículo destaca o amor sacrificial de Cristo, que morreu por nós quando ainda éramos seus inimigos.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">1 Pedro 2:24</h3>
+                    <p class="text-gray-700 mb-3">"Levou em seu corpo os nossos pecados sobre o madeiro, para que, mortos para o pecado, pudéssemos viver para a justiça; por suas chagas fostes sarados."</p>
+                    <p class="text-gray-600 italic">Pedro explica como Jesus carregou nossos pecados e o propósito redentor de seu sacrifício.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Conteúdo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Nascimento milagroso</h3>
+                    <p class="text-gray-700 mb-4">O nascimento de Jesus foi anunciado por anjos e cumprimento de profecias antigas. Concebido pelo Espírito Santo no ventre de Maria, uma virgem, Ele nasceu em Belém como havia sido predito. Este nascimento milagroso demonstra a natureza divina de Jesus – plenamente Deus e plenamente homem. Embora fosse o Rei dos reis, nasceu em circunstâncias humildes, demonstrando que veio para servir e não para ser servido.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Vida sem pecado</h3>
+                    <p class="text-gray-700 mb-4">Durante seus aproximadamente 33 anos de vida, Jesus viveu em perfeita obediência a Deus, enfrentando todas as tentações que experimentamos, mas sem jamais pecar. Esta vida impecável o qualificou para ser o sacrifício perfeito por nossos pecados. Através de seu ministério, Ele ensinou sobre o Reino de Deus, curou os enfermos, libertou os oprimidos e demonstrou através de milagres sua autoridade divina sobre a natureza, as doenças e até mesmo a morte.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Sacrifício na cruz</h3>
+                    <p class="text-gray-700 mb-4">A crucificação de Jesus representa o momento culminante do plano divino de redenção. Na cruz, Ele tomou sobre si a punição por nossos pecados, experimentando a separação de Deus para que nunca tivéssemos que experimentá-la. As sete declarações de Jesus na cruz revelam aspectos importantes de seu sacrifício: seu perdão, sua provisão para os que ama, seu sentimento de abandono quando carregou nossos pecados, sua sede, o cumprimento de sua missão e sua entrega final nas mãos do Pai.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Ressurreição</h3>
+                    <p class="text-gray-700 mb-4">Ao terceiro dia, Jesus ressuscitou dentre os mortos, vencendo definitivamente o poder da morte e do pecado. Sua ressurreição é o selo da aprovação divina sobre seu sacrifício e a garantia de nossa justificação. Por quarenta dias após ressuscitar, Ele apareceu a muitas testemunhas, confirmando sua vitória e instruindo seus discípulos. Finalmente, ascendeu aos céus diante de seus seguidores, prometendo voltar e enviando-os para proclamar o evangelho a todas as nações, com a promessa de estar sempre com eles.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula2.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="aula4.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Próxima Aula <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 

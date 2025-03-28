@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 5: Pecado e Perdão | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 5</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Pecado e Perdão</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">Compreendendo o problema do pecado e a solução divina através do perdão</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Definir o que é pecado</h3>
+                    <p class="text-gray-700">O pecado é como uma doença espiritual que nos separa de Deus, causando dor e destruição em nossas vidas. Mais do que simples violações de regras, o pecado é qualquer pensamento, atitude ou ação que contraria a natureza e a vontade de Deus. É uma força destrutiva que distorce nossa identidade original e rompe nosso relacionamento com o Criador, com outros seres humanos e com toda a criação.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender o amor de Deus</h3>
+                    <p class="text-gray-700">O amor de Deus transcende nossa compreensão humana - é incondicional, sacrificial e transformador. Mesmo conhecendo completamente nossa natureza pecaminosa, Deus não deixa de nos amar. Seu amor não nega a justiça, mas fornece um caminho para satisfazê-la através do sacrifício de Jesus. Este amor não apenas nos perdoa, mas nos restaura e nos capacita a amar como Ele ama, rompendo os ciclos de pecado em nossa vida.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Conhecer o caminho do perdão</h3>
+                    <p class="text-gray-700">O perdão divino é um presente gratuito, disponível através do sacrifício de Jesus Cristo. O caminho para recebê-lo começa com o reconhecimento genuíno de nossos pecados, seguido pelo arrependimento - uma mudança de direção e de mentalidade. Através da fé em Cristo, recebemos não apenas o perdão dos pecados passados, mas também libertação de sua escravidão e poder para viver em novidade de vida, experimentando a restauração completa de nosso relacionamento com Deus.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Romanos 3:23</h3>
+                    <p class="text-gray-700 mb-3">"Porque todos pecaram e destituídos estão da glória de Deus."</p>
+                    <p class="text-gray-600 italic">Paulo declara a universalidade do pecado - todos, sem exceção, são afetados por ele.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">1 João 1:9</h3>
+                    <p class="text-gray-700 mb-3">"Se confessarmos os nossos pecados, ele é fiel e justo para perdoar os nossos pecados e nos purificar de toda injustiça."</p>
+                    <p class="text-gray-600 italic">João apresenta a promessa divina de perdão e purificação mediante a confissão sincera.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Efésios 2:8-9</h3>
+                    <p class="text-gray-700 mb-3">"Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus. Não vem das obras, para que ninguém se glorie."</p>
+                    <p class="text-gray-600 italic">Paulo enfatiza que o perdão e a salvação são dádivas da graça divina, recebidas pela fé, não conquistadas por esforço humano.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Conteúdo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">O que é pecado</h3>
+                    <p class="text-gray-700 mb-4">A Bíblia apresenta o pecado de várias maneiras: como errar o alvo (hamartia), como transgressão (parabasis), como rebelião contra Deus (anomia) e como uma dívida impagável (opheilema). Mais do que ações isoladas, o pecado é uma condição humana que afeta nossa natureza desde a queda de Adão e Eva. Esta condição se manifesta em atitudes concretas que contrariam a vontade de Deus, prejudicam nossos relacionamentos e distorcem nossa identidade como seres criados à imagem e semelhança de Deus.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Consequências do pecado</h3>
+                    <p class="text-gray-700 mb-4">O pecado produz consequências devastadoras em todos os aspectos da existência humana. Espiritualmente, causa separação de Deus, nossa fonte de vida. Relacionalmente, gera conflitos, desconfiança e isolamento. Psicologicamente, resulta em culpa, vergonha e autodestrutividade. Fisicamente, muitas vezes leva a doenças e sofrimentos. E cosmicamente, trouxe desordem e decadência para toda a criação. A mais grave consequência é a morte - tanto física quanto espiritual - conforme Romanos 6:23 afirma que "o salário do pecado é a morte".</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Graça e perdão de Deus</h3>
+                    <p class="text-gray-700 mb-4">Diante do problema universal do pecado, Deus oferece a solução perfeita através de sua graça e perdão. A graça é o favor imerecido de Deus, sua bondade dirigida aos que não a merecem. O perdão é o cancelamento da dívida do pecado, possibilitado pelo sacrifício substitutivo de Jesus Cristo na cruz. Quando recebemos este perdão, experimentamos libertação da culpa, reconciliação com Deus, renovação interior pelo Espírito Santo e restauração de nosso verdadeiro propósito. O perdão divino não apenas apaga nosso passado, mas abre caminho para um futuro de esperança.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Como receber e conceder perdão</h3>
+                    <p class="text-gray-700 mb-4">Receber o perdão divino envolve reconhecimento do pecado, confissão sincera, arrependimento genuíno e aceitação da obra de Cristo pela fé. Este processo não é uma fórmula mágica, mas um relacionamento vivo com Deus. Tendo recebido o perdão divino, somos chamados a perdoar os outros, como Jesus ensinou na oração do Pai Nosso e na parábola do servo impiedoso. Perdoar não significa negar a injustiça, mas libertar-se do peso da amargura e do ciclo de retaliação, entregando o julgamento final a Deus e escolhendo tratar o ofensor com amor, mesmo quando isso é difícil.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula4.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="aula6.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Próxima Aula <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 

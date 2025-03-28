@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 6: Salvação | ADET - Discipulado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .bible-verse {
+            background-color: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 0.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold flex items-center">
+                    <img src="logo-adet.png" alt="ADET" class="h-8 mr-2">
+                    ADET Discipulado
+                </a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded hover:bg-blue-800 transition">Início</a>
+                    <div class="relative group">
+                        <button class="px-3 py-2 rounded hover:bg-blue-800 transition">
+                            Aulas <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute left-0 mt-0 pt-2 w-48 hidden group-hover:block hover:block">
+                            <div class="bg-white rounded-md shadow-lg py-1 text-sm text-gray-700">
+                                <a href="aula1.html" class="block px-4 py-2 hover:bg-gray-100">Aula 1: A Bíblia</a>
+                                <a href="aula2.html" class="block px-4 py-2 hover:bg-gray-100">Aula 2: Deus Trino</a>
+                                <a href="aula3.html" class="block px-4 py-2 hover:bg-gray-100">Aula 3: Jesus Cristo</a>
+                                <a href="aula4.html" class="block px-4 py-2 hover:bg-gray-100">Aula 4: Espírito Santo</a>
+                                <a href="aula5.html" class="block px-4 py-2 hover:bg-gray-100">Aula 5: Pecado e Perdão</a>
+                                <a href="aula6.html" class="block px-4 py-2 hover:bg-gray-100">Aula 6: Salvação</a>
+                                <a href="aula7.html" class="block px-4 py-2 hover:bg-gray-100">Aula 7: Batismo</a>
+                                <a href="aula8.html" class="block px-4 py-2 hover:bg-gray-100">Aula 8: Igreja</a>
+                                <a href="aula9.html" class="block px-4 py-2 hover:bg-gray-100">Aula 9: Adoração</a>
+                                <a href="aula10.html" class="block px-4 py-2 hover:bg-gray-100">Aula 10: Céu e Inferno</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="print-btn" class="px-3 py-2 rounded hover:bg-blue-800 transition flex items-center">
+                        <i class="fas fa-print mr-1"></i> Imprimir
+                    </button>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Menu móvel -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Início</a>
+            <a href="aula1.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 1: A Bíblia</a>
+            <a href="aula2.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 2: Deus Trino</a>
+            <a href="aula3.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 3: Jesus Cristo</a>
+            <a href="aula4.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 4: Espírito Santo</a>
+            <a href="aula5.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 5: Pecado e Perdão</a>
+            <a href="aula6.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 6: Salvação</a>
+            <a href="aula7.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 7: Batismo</a>
+            <a href="aula8.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 8: Igreja</a>
+            <a href="aula9.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 9: Adoração</a>
+            <a href="aula10.html" class="block px-4 py-2 text-sm hover:bg-blue-800">Aula 10: Céu e Inferno</a>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white py-12 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Aula 6</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold mb-4">Salvação</h2>
+            <p class="text-lg opacity-90 max-w-3xl mx-auto">O resgate divino e a restauração da humanidade através de Jesus Cristo</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Objetivos</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Entender o significado da salvação</h3>
+                    <p class="text-gray-700">A salvação é o resgate completo que Deus oferece à humanidade através de Jesus Cristo. É muito mais que um simples livramento do inferno - é a restauração integral de nosso relacionamento com Deus, conosco mesmos, com o próximo e com toda a criação. Inclui a libertação das consequências e do poder do pecado, o perdão, a reconciliação com Deus, a adoção como filhos, a renovação interior e a promessa de vida eterna.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Compreender a obra de Cristo</h3>
+                    <p class="text-gray-700">Jesus realizou uma obra perfeita e completa para nossa salvação. Sua vida sem pecado cumpriu a lei que nós não podíamos cumprir. Sua morte na cruz foi um sacrifício substitutivo que pagou o preço de nossos pecados. Sua ressurreição demonstrou Sua vitória sobre a morte e o pecado, garantindo nossa justificação. Sua ascensão estabeleceu Seu reinado celestial, de onde Ele intercede por nós. E Seu retorno prometido nos dá esperança de restauração final.</p>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
+                    <div class="bg-blue-600 text-white rounded-full w-10 h-10 flex items-center justify-center mb-4">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Reconhecer como receber a salvação</h3>
+                    <p class="text-gray-700">A salvação é um dom gratuito que recebemos pela fé, não por mérito próprio. O processo de recebê-la inclui ouvir o evangelho, reconhecer nossa condição pecaminosa, arrepender-nos genuinamente, crer em Jesus Cristo como Salvador pessoal e confessar publicamente essa fé. Embora a fé seja o único meio de recebermos a salvação, uma fé verdadeira sempre se expressa em obras de amor e obediência - não como condição para a salvação, mas como fruto dela.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8 mb-10">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Referências Bíblicas</h2>
+            
+            <div class="space-y-8">
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Efésios 2:8-9</h3>
+                    <p class="text-gray-700 mb-3">"Porque pela graça sois salvos, por meio da fé; e isto não vem de vós, é dom de Deus. Não vem das obras, para que ninguém se glorie."</p>
+                    <p class="text-gray-600 italic">Paulo enfatiza que a salvação é um presente da graça divina, recebido pela fé, e não conquistado por esforços humanos.</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">João 3:16</h3>
+                    <p class="text-gray-700 mb-3">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."</p>
+                    <p class="text-gray-600 italic">Jesus revela a motivação da salvação (o amor de Deus), o meio (o sacrifício de Cristo) e a condição para recebê-la (a fé).</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Romanos 10:9-10</h3>
+                    <p class="text-gray-700 mb-3">"Se, com a tua boca, confessares Jesus como Senhor e, em teu coração, creres que Deus o ressuscitou dentre os mortos, serás salvo. Porque com o coração se crê para justiça e com a boca se confessa a respeito da salvação."</p>
+                    <p class="text-gray-600 italic">Paulo descreve como a fé se expressa tanto interiormente (crer no coração) quanto exteriormente (confessar com a boca).</p>
+                </div>
+                
+                <div class="bible-verse">
+                    <h3 class="font-semibold text-lg text-blue-800 mb-2">Tito 3:5</h3>
+                    <p class="text-gray-700 mb-3">"Não por obras de justiça que houvéssemos feito, mas segundo a sua misericórdia, nos salvou pela lavagem da regeneração e da renovação do Espírito Santo."</p>
+                    <p class="text-gray-600 italic">Paulo reafirma que a salvação não vem por mérito humano, mas pela misericórdia divina que nos regenera e renova.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-blue-900 mb-6">Conteúdo</h2>
+            
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Aspectos da Salvação</h3>
+                    <p class="text-gray-700 mb-4">A salvação é um conceito amplo que inclui diversos aspectos: justificação (declaração legal de inocência), regeneração (nascimento espiritual), adoção (inserção na família de Deus), santificação (processo de transformação à semelhança de Cristo) e glorificação (estado final de perfeição). Embora experimentemos alguns desses aspectos imediatamente ao crer em Jesus, outros se desenvolvem ao longo da vida cristã, e alguns aguardam sua plena realização no futuro. A salvação abarca nosso passado (fomos salvos da condenação), nosso presente (estamos sendo salvos do poder do pecado) e nosso futuro (seremos salvos da própria presença do pecado).</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">A Obra de Jesus Cristo</h3>
+                    <p class="text-gray-700 mb-4">Jesus Cristo é o centro da obra salvífica de Deus. Como o Cordeiro de Deus, Ele tomou sobre si a culpa de nossos pecados e pagou nosso débito com Sua própria vida. Como Sumo Sacerdote perfeito, Ele ofereceu o sacrifício definitivo e agora intercede por nós. Como Rei vitorioso, Ele conquistou o pecado, a morte e Satanás, estabelecendo Seu reino em nossos corações. Como o segundo Adão, Ele reverteu o fracasso do primeiro homem e inaugurou uma nova humanidade. Jesus não apenas possibilitou nossa salvação, Ele é nossa salvação - nosso redentor, mediador, justificador, santificador e glorificador.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Fé e Arrependimento</h3>
+                    <p class="text-gray-700 mb-4">A fé salvadora não é meramente um assentimento intelectual a verdades teológicas, mas uma confiança pessoal em Jesus Cristo. Ela inclui conhecimento (compreensão do evangelho), acordo (aceitação dessas verdades) e confiança (entrega pessoal a Cristo). O arrependimento genuíno, por sua vez, envolve três elementos: intelectual (reconhecimento do pecado), emocional (tristeza pela ofensa a Deus) e volitivo (mudança de direção na vida). Fé e arrependimento são duas facetas da mesma resposta ao evangelho - não podemos verdadeiramente crer sem nos arrepender, nem podemos nos arrepender genuinamente sem crer.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Graça e Obras</h3>
+                    <p class="text-gray-700 mb-4">A Bíblia ensina claramente que somos salvos unicamente pela graça, através da fé, e não por obras meritórias. Ao mesmo tempo, afirma que a fé sem obras é morta. Como resolver esta aparente contradição? A resposta está na ordem correta: somos salvos exclusivamente pela graça mediante a fé, mas a fé que salva nunca permanece sozinha - ela inevitavelmente produz boas obras. As obras não são a raiz da salvação, mas seu fruto necessário. Não fazemos boas obras para sermos salvos, mas porque já fomos salvos. A obediência cristã não é uma tentativa de ganhar o favor divino, mas uma resposta amorosa à graça já recebida.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold text-blue-800 mb-3">Segurança e Perseverança</h3>
+                    <p class="text-gray-700 mb-4">A Bíblia nos oferece a maravilhosa certeza de que aqueles que verdadeiramente pertencem a Cristo estão eternamente seguros em Suas mãos. Essa segurança não se baseia em nossos sentimentos ou desempenho, mas nas promessas de Deus, na obra perfeita de Cristo e no selo do Espírito Santo. No entanto, a mesma Escritura que nos dá segurança também nos chama à perseverança na fé. Quem é genuinamente salvo perseverará até o fim, não por força própria, mas pelo poder de Deus que opera em nós. Esta doutrina equilibrada nos protege tanto da ansiedade desnecessária quanto da presunção perigosa, mantendo-nos humildes e dependentes da graça divina.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-10 flex justify-between">
+            <a href="aula5.html" class="inline-flex items-center px-4 py-2 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition">
+                <i class="fas fa-arrow-left mr-2"></i> Aula Anterior
+            </a>
+            <a href="aula7.html" class="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition">
+                Próxima Aula <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">ADET - Discipulado</h3>
+                    <p class="text-gray-300">Construindo fundamentos sólidos da fé cristã</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">© Todos os direitos reservados</p>
+                    <p class="text-gray-400">Reprodução permitida para fins de discipulado</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu móvel
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Função para impressão
+        document.getElementById('print-btn').addEventListener('click', function() {
+            // Cria um novo elemento de estilo para impressão
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @media print {
+                    nav, footer, .mt-10 {
+                        display: none !important;
+                    }
+                    body {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    header {
+                        background-color: #fff !important;
+                        color: #000 !important;
+                        padding: 20px 0 !important;
+                    }
+                    .container {
+                        max-width: 100% !important;
+                    }
+                    .bible-verse {
+                        border-left: 2px solid #000 !important;
+                        background-color: #f9f9f9 !important;
+                    }
+                    * {
+                        color: #000 !important;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Abre a janela de impressão
+            window.print();
+        });
+    </script>
+</body>
+</html> 
